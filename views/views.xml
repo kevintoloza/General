@@ -12,7 +12,7 @@
            	<field name="c_nit" />
             <field name="c_dui" />
             <field name="c_giro" />
-           
+           <field name="c_nrc" />
             </xpath>	
             
 

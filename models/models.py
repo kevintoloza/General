@@ -8,6 +8,7 @@ from odoo import SUPERUSER_ID
 class invoice_legal(models.Model):
     _inherit = 'res.partner'
     nombre = fields.Integer()
+    c_nrc = fields.Char(string="NRC")
     c_nit = fields.Char(string="NIT")
     c_dui = fields.Char(string="DUI")
     c_giro = fields.Char(string= "Giro de la empresa")
