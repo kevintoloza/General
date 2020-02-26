@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+
+<record model="ir.ui.view" id="res_partner_implementacion">
+<field name="name">res_partner_implementacion</field>
+<field name="model">res.partner</field>
+<field name="inherit_id" ref="base.view_partner_form" />
+<field name="arch" type="xml">
+
+ <xpath expr="//field[@name='property_account_position_id']" position="after">
+           	<field name="c_nit" />
+            <field name="c_dui" />
+            <field name="c_giro" />
+           
+            </xpath>	
+            
+
+ <xpath expr="//field[@name='website']" position="attributes">
+     <attribute name="invisible">1</attribute>   
+</xpath> 
+
+<xpath expr="//field[@name='category_id']" position="attributes">
+     <attribute name="invisible">1</attribute>   
+</xpath> 
+
+ </field>
+ </record>
+
+ </data>
+</odoo>
